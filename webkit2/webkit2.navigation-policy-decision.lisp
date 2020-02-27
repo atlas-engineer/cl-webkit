@@ -15,6 +15,7 @@
   (("frame-name" "gchararray")
    ("modifiers" "guint")
    ("mouse-button" "guint")
+   ("navigation-action" "WebKitNavigationAction" t t)
    ("navigation-type" "WebKitNavigationType")
    ("request" "WebKitURIRequest")))
 
