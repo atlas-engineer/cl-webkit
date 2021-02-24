@@ -195,14 +195,6 @@
   (user-data :pointer))
 (export 'webkit-web-view-run-javascript)
 
-(defvar callback-counter 0)
-(defvar callbacks ())
-(defstruct callback
-  (id callback-counter :type number)
-  web-view
-  (function nil :type (or function null))
-  (error-function nil :type (or function null)))
-
 (cffi:defcallback javascript-evaluation-complete
     :void ((source-object :pointer) (result :pointer) (user-data :pointer))
   (declare (ignore source-object))
